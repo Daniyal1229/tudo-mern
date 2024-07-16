@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: rgb(255, 226, 4);
+  height: 100px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.app {
+  padding: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 2px 5px 20px rgba(128, 128, 128, 0.565);
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.task-item .btns {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.task-item .btns button {
+  padding: 5px 2em;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.task-item .btns > button:first-child {
+  background-color: rgb(255, 214, 8);
+}
+
+.task-item .btns > button:last-child {
+  background-color: red;
+  color: white;
+}
+
+.task-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  padding: 10px;
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.task-form input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px groove rgb(5, 255, 143);
+}
+
+.task-form button {
+  padding: 10px;
+  margin-top: 1em;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.edit-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.edit-form input {
+  padding: 10px;
+  flex: 1;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.edit-form input:focus {
+  outline: none;
+  border: 1px solid rgb(5, 255, 143);
+}
